@@ -14,3 +14,7 @@ Ce deployment va créér (par défault) 1 pod, l'utilisation des selecteurs est 
 Créer un service qui va servir à exposer notre pod Mongo à l'intérieur de notre cluster afin qu'il puisse être utilisé comme DB pour d'autres pods (un backend par exemple...).
 
 Ce service ciblera les pods du deployment instancié plus hauts.
+
+On mettra tout d'abord le service en type `NodePort` afin de pouvoir le tester (via la commande `mongo 127.0.0.1:PORT`).
+
+On enlevera le type `NodePort` afin qu'il ne soit pas accessible directement via un port de la VM.
