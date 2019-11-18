@@ -1,0 +1,18 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: front-training-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: front-training-app
+  template:
+    metadata:
+      labels:
+        app: front-training-app
+    spec:
+      containers:
+      - name: front-training-app
+        image: axelpereira/k8s-training-test-app-front:dev
+        imagePullPolicy: IfNotPresent
