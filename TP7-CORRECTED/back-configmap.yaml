@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: back-configmap
+  namespace: form-k8s-acc
+data:
+  MONGO_HOSTNAME: mongo.form-k8s-acc.svc.cluster.local
+  MONGO_PORT: "27017"
+  MONGO_DB: training

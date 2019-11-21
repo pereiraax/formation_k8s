@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: back-training-app
+  namespace: form-k8s-acc
+spec:
+  ports:
+  - port: 80
+    targetPort: 5000
+  selector:
+    app: back-training-app
