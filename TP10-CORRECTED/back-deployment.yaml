@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: back-training-app
-  namespace: form-k8s
+  namespace: form-k8s-acc
 spec:
   replicas: 1
   selector:
