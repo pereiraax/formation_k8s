@@ -30,3 +30,32 @@ _(faculatif: Tester les attributions de QosClass)_
 Donner des requests memory aux pods backend de 1G (volontairement trop élévé pour un prochain TP)
 
 Verifier que la QosClass des pods backend modifié ont bien changé. 
+
+#### PDB (Pod Disruption Budget)
+
+Un pod disruption budget permet de créér des régles de gestion des réplicas lorsqu'un noeud veut tuer des pods.
+
+Un PDB se contruit comme suit : 
+
+```yaml
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: backend-pdb
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app: back-training-app
+```
+
+Il utilise le `selector.matchLabels` pour déterminer sur quels groupes de pods il va agir. 
+Et il a comme régle d'interdir l'évition d'un pod si il n'en reste plus que `minAvailable` (ici 2). (le même principe existe avec la spec `maxUnavailable`)
+
+La valeur de `minAvailable` ou de `maxUnavailable` peut etre un nombre ou un pourcentage.
+
+Pas besoin de créér de PDB dans ces TPs. 
+
+
+
+

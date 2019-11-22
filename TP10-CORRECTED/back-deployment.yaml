@@ -2,7 +2,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: back-training-app
-  namespace: form-k8s
+  namespace: form-k8s-acc
 spec:
   replicas: 1
   selector:
@@ -13,6 +13,7 @@ spec:
       labels:
         app: back-training-app
     spec:
+      priorityClassName: pod-priority-acc
       containers:
       - name: back-training-app
         image: axelpereira/k8s-training-test-app-back:1.3
