@@ -14,7 +14,7 @@ La déclaration d'un StatefulSet et celle d'un Deployment sont sensiblement les 
 
 Une des différences est que le StatefulSet demande absolument un Service, il faut lui indiquer lequel utilisé. 
 
-En revanche il ne le créé pas tout seul il faut le créér pour lui.
+_Note: En revanche il ne le créé pas tout seul il faut le créér pour lui._
 
 #### PersistentVolumeClaim
 
@@ -22,5 +22,5 @@ Une fois l'application mongo passé en StatefulSet on va pouvoir lui attacher un
 
 Quelques exigences à respecter : 
 * Le stockage sera de 1 Giga
-* le mode d'accés au stockage sera `ReadWriteOnce`
-* le stockage sera monté dans le repertoire `/data/db` du container Mongo
+* Le mode d'accés au stockage sera `ReadWriteOnce`
+* Le stockage sera monté dans le repertoire `/data/db` du container Mongo
