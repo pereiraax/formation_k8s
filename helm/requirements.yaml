@@ -1,0 +1,21 @@
+dependencies:
+
+# config chart
+  - name: config-chart
+    version: 0.1.0
+    alias: config
+
+# mongodb chart 
+  - name: mongodb-chart
+    version: 0.1.0
+    alias: mongodb
+
+# backend chart 
+  - name: backend-chart
+    version: 0.1.0
+    alias: backend
+
+# frontend chart
+  - name: frontend-chart
+    version: 0.1.0
+    alias: frontend
