@@ -35,7 +35,7 @@ Verifier que la QosClass des pods backend modifié ont bien changé.
 
 Un pod disruption budget permet de créér des régles de gestion des réplicas lorsqu'un noeud veut tuer des pods.
 
-Un PDF se contruit comme suit : 
+Un PDB se contruit comme suit : 
 
 ```yaml
 apiVersion: policy/v1beta1
