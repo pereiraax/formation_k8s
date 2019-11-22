@@ -17,6 +17,8 @@ Créér 3 PriorityClass avec des valeurs différentes comme suit:
 * pod-priority-acc : 500
 * pod-priority-dev : 100
 
+Attribuer deux PriorityClass à deux pods backend différents.
+
 Ajouter / Ajuster les request en mémoire de deux deployment, pour que chaque environnement prenne la (quasi) totalité de la RAM de la machine (back-dev -> 2G & back-acc -> 2G). 
 
 Vérifier que l'environnement avec la plus grosse priorité se lance bien à la place du premier.
