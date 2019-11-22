@@ -1,0 +1,6 @@
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: pod-priority-dev
+value: 100
+description: "Priority class used for development environment"
