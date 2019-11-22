@@ -11,6 +11,13 @@ Ce deployment va devoir créer des pods qui vont répondre à plusieurs exigence
 - L'image doit être pull seulement lorsqu'elle n'est pas présente dans notre cluster.
 - On veut 2 pods pour être sûr que si l'un tombe l'autre puisse répondre !
 
+Le port 80 du container est déjà exposé, pas besoin de l'exposé encore une fois.
+Pour rappel on l'aurait exposé via :
+```
+ports:
+- containerPort: 80
+```
+
 #### Service
 
 Créer un service qui va servir à exposer nos pods Frontend à l'exterieur de notre cluster via un port de notre machine. 
