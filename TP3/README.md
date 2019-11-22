@@ -1,6 +1,6 @@
 # Formation K8S
 
-## TP2 : Ingress et exposition
+## TP3 : Ingress et exposition
 
 #### NGINX controller setup
 
