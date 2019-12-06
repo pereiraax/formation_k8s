@@ -1,0 +1,2 @@
+Application déployé ! 
+Voici votre application pour l'environnment : {{ .Values.env }}
