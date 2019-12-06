@@ -41,6 +41,6 @@ Par exemple une variable `"form-k8s-dev"` deviendra `"form-k8s-{{ .Values.env }}
 
 L'application doit pouvoir être installé et rendu accessible via la commande `helm install --set env=test --name form-k8s-test ./` 
 
-**Une fois l'application fonctionnel vous pouvez variabilisé tout ce qui vous semble pertinent de variabiliser**
+**Une fois l'application fonctionnelle vous pouvez variabilisé tout ce qui vous semble pertinent de variabiliser**
 
 **Faites en sorte de pouvoir *upgrader* la version du backend via un `--set backend.tag="1.4"` et qu'il n'y ai bien sûr que votre backend qui en soit impacté.**
