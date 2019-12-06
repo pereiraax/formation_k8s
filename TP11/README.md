@@ -10,7 +10,7 @@ On va rassembler les fichiers yamls décrivant toutes nos ressources :
  * frontend: deployment & service
  * backend : deployment & service
 
-> l'arborsescence d'un chart helm est conçu comme cela:
+> l'arborescence d'un chart helm est conçu comme cela:
 >
 >```
 > helm/
