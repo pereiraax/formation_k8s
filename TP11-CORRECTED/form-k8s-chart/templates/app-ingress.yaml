@@ -1,4 +1,4 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: app-ingress-front
@@ -10,10 +10,16 @@ spec:
   - http:
       paths:
       - path: /{{ .Values.env}}(.*)
+        pathType: Prefix
         backend:
-          serviceName: front-training-app
-          servicePort: 80
+          service:
+            name: front-training-app
+            port: 
+              number: 80
       - path: /{{ .Values.env}}/api/(.*)
+        pathType: Prefix
         backend:
-          serviceName: back-training-app
-          servicePort: 80
+          service:
+            name: back-training-app
+            port:
+              number: 80
