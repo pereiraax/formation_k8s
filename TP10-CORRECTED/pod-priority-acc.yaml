@@ -1,6 +1,0 @@
-apiVersion: scheduling.k8s.io/v1
-kind: PriorityClass
-metadata:
-  name: pod-priority-acc
-value: 500
-description: "Priority class used for acceptance environment"

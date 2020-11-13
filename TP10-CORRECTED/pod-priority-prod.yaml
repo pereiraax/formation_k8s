@@ -1,6 +1,0 @@
-apiVersion: scheduling.k8s.io/v1
-kind: PriorityClass
-metadata:
-  name: pod-priority-prod
-value: 1000
-description: "Priority class used for production environment"
