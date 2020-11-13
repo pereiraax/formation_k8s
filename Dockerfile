@@ -12,3 +12,5 @@ EXPOSE 9000
 # RUN pkill mdstart 
 
 CMD marvo serve /TPS 
+
+# docker run -p 33333:9000 -d axelpereira/formation-tp-hosted:latest
