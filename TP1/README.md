@@ -20,3 +20,6 @@ Ce service ciblera les pods du deployment instancié plus hauts.
 On mettra tout d'abord le service en type `NodePort` afin de pouvoir le tester (via la commande `mongo 127.0.0.1:PORT`).
 
 On enlevera le type `NodePort` afin qu'il ne soit pas accessible directement via un port de la VM.
+
+
+#### Attention un des seuls ports ouvert pour l'accès à minikube à l'intérieur de la vm est le 30001 ... 
