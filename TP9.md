@@ -37,7 +37,7 @@ Un pod disruption budget permet de créér des régles de gestion des réplicas 
 
 Un PDB se contruit comme suit : 
 
-```yaml
+```
 apiVersion: policy/v1beta1
 kind: PodDisruptionBudget
 metadata:
